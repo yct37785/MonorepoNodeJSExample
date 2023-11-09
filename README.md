@@ -6,13 +6,13 @@ The monorepo is structured as follows:
 ```/my-monorepo
 │
 ├── packages
-│ ├── ProjectA
-│ │ ├── index.js
-│ │ └── package.json
-│ │
-│ └── ProjectB
-│ ├── index.js
-│ └── package.json
+│   ├── ProjectA
+│   │   ├── index.js
+│   │   └── package.json
+│   │
+│   └── ProjectB
+│       ├── index.js
+│       └── package.json
 │
 └── package.json```
 
