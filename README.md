@@ -3,7 +3,7 @@ The following explains how to setup a basic monorepo for NodeJS. In this example
 
 ## Project Structure
 The monorepo is structured as follows:
-/my-monorepo
+```/my-monorepo
 │
 ├── packages
 │ ├── ProjectA
@@ -14,7 +14,7 @@ The monorepo is structured as follows:
 │ ├── index.js
 │ └── package.json
 │
-└── package.json
+└── package.json```
 
 ## Setup
 ###Initialize the monorepo
