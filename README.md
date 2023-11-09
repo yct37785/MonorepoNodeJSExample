@@ -19,14 +19,14 @@ The monorepo is structured as follows:
 ```
 
 ## Setup
-###Initialize the monorepo
+### Initialize the monorepo
 
 ````bash
 mkdir my-monorepo && cd my-monorepo
 yarn init -y
 ````
 
-###Configure Yarn Workspaces in root
+### Configure Yarn Workspaces in root
 In root, create the root `packages.json` :
 
 ````json
@@ -41,7 +41,7 @@ In root, create the root `packages.json` :
 
 The `"private": true` is important because it prevents the root of your monorepo from being accidentally published to npm.
 
-###Create ProjectA (your component)
+### Create ProjectA (your component)
 Within your monorepo, create a packages directory where each package will live:
 
 ````bash
@@ -81,7 +81,7 @@ const componentA = () => {
 module.exports = componentA;
 ````
 
-###Create ProjectB (your app)
+### Create ProjectB (your app)
 Create corresponding ProjectB back in the packages folder:
 
 ````bash
@@ -124,10 +124,10 @@ axios.get('https://api.github.com/users/github')
 	});
 ````
 
-###Install dependencies
+### Install dependencies
 We will install dependencies in the root with the yarn managed root `package.json`.
 
-Yarn will now install all dependencies in the root node_modules, linking projectA within projectB's node_modules.
+Yarn will now install all dependencies in the root node_modules, linking projectA within projectB's node_modules:
 
 ````bash
 cd ../../
